@@ -1,4 +1,5 @@
 
+
 images = [
     {
         'title': 'Mountain Range',
@@ -13,7 +14,7 @@ images = [
     {
         'title': 'Umbrellas',
         'image': '../static/images/image-3.jpg',
-        'description': 'The free an unbrella festival'
+        'description': 'The free an umbrella festival'
     },
     {
         'title': 'Pacific Island',

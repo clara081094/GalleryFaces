@@ -1,7 +1,11 @@
+{#  Convert the gallery.html to a Jinja template
+    and display it in index.html  #}
 {% extends 'index.html' %}
 
 {% block content %}
 
+{#  Loop over the images list to get the data and
+    for every image create a thumbnail  #}
 {% for list in images %}
     <div class="image">
         <a class="image-hover" href="{{ list['image'] }}">
@@ -15,3 +19,11 @@
 {% endfor %}
 
 {% endblock %}
+
+
+
+
+
+
+
+
