@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+{% for list in images %}
+    <div class="image">
+        <a class="image-hover" href="{{ list['image'] }}">
+            <div class="image-title">{{ list['title'] }}</div>
+            <div class="image-line"></div>
+            <div class="image-caption">{{ list['description'] }}
+            </div>
+        </a>
+        <img src="{{ list['image'] }}" class="image-thumbnail">
+    </div>
+{% endfor %}
+
+{% endblock %}
