@@ -6,17 +6,12 @@
 
 {#  Loop over the images list to get the data and
     for every image create a thumbnail  #}
-{% for list in images %}
-    <div class="image">
-        <a class="image-hover" href="{{ list['image'] }}">
-            <div class="image-title">{{ list['title'] }}</div>
-            <div class="image-line"></div>
-            <div class="image-caption">{{ list['description'] }}
-            </div>
-        </a>
-        <img src="{{ list['image'] }}" class="image-thumbnail">
-    </div>
-{% endfor %}
+    
+    {% for i in faces %}
+        <div class="image">
+            <img src="http://localhost:5000/retornarFace/{{i['camera']}}/{{i['face']}}" class="image-thumbnail">
+        </div>
+    {% endfor %}
 
 {% endblock %}
 
